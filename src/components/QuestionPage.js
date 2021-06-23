@@ -49,7 +49,7 @@ class QuestionPage extends Component {
         submitJson.topicId = this.state.topicId
         submitJson.submission = this.state.submission
         console.log(submitJson)
-        axios.post('http://192.168.1.13:8081/api/submitQuiz', submitJson)
+        axios.post(process.env.REACT_APP_BACKENDAPI+'/submitQuiz', submitJson)
         .then(res => {
             console.log(res.data)
             alert("You answered "+res.data.points+" correctly")
