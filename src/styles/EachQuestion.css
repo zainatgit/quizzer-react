@@ -1,0 +1,23 @@
+.questionContainer{
+    display: grid;
+}
+
+.eachQuestionBox{
+    min-width: 700px;
+    margin: auto;
+}
+
+.options{
+    display: block;
+    font-size: 25px;
+}
+hr {
+    margin-top: 40px;
+}
+.submitButton{
+    font-size: 30px;
+    padding: 1%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    background-color: #ff96ad;
+}

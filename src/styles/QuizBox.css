@@ -1,0 +1,27 @@
+.QuizBox {
+    max-width: 720px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.eachBox {
+    border: 1px black solid;
+    min-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #ff96ad;
+}
+
+.eachBox:hover {
+    background-color: #f75c7d;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+

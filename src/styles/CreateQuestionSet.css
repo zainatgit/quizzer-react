@@ -1,0 +1,35 @@
+.create-question-box {
+    display: grid;
+    max-width: 700px;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    font-size:x-large;
+}
+
+.option-input {
+    width: 200px;
+    background-color: #ff96ad;
+}
+
+.option-input-correct{
+    width: 20px;
+    background-color: #ff96ad;
+}
+
+textarea{
+    background-color: #ff96ad;
+    height: 50px;
+    font-size: 20px;
+}
+
+.textarea-title{
+    height: auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+.quiz-title{
+    font-size: xx-large;
+}
