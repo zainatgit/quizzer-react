@@ -13,7 +13,7 @@ class QuestionPage extends Component {
     }
 
     componentDidMount(){
-        fetch(`http://192.168.1.37:8081/api/questions/${this.props.match.params.topicId}`)
+        fetch(process.env.REACT_APP_BACKENDAPI+`/questions/${this.props.match.params.topicId}`)
         .then(response => response.json())
         .then(data => {
             this.setState({

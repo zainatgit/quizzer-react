@@ -11,7 +11,8 @@ class Home extends Component {
     }
     
     componentDidMount(){
-        fetch('http://192.168.1.37:8081/api/topics')
+        console.log(process.env.REACT_APP_BACKENDAPI);
+        fetch(process.env.REACT_APP_BACKENDAPI+'/topics')
         .then(response => response.json())
         .then(data => {
             this.setState({

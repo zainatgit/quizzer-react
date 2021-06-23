@@ -52,7 +52,7 @@ class CreateQuiz extends Component {
             questionArray.push(eachQuestion);
         }
         postData.question = questionArray;
-        axios.post('http://192.168.1.37:8081/api/topicQuestionOption', postData)
+        axios.post(process.env.REACT_APP_BACKENDAPI+'/topicQuestionOption', postData)
         .then(response => console.log(response))
         .catch(error => {
             console.error('There was an error!', error);
